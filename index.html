@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+
+        }
+        .header{
+            height: 70px;
+            width: 100%;
+            background-color: #0F0F0F;
+            display: flex;
+            justify-content: space-between;
+        }
+        .header1{
+            margin-left: 30px;
+            border: 1px solid;
+        }
+        .header2{
+            
+            line-height: 70px;
+            border: 1px solid;
+            margin-right: 100px;
+            margin-left: 100px;
+            min-width: 100px;
+            max-width: 600px;
+            position: relative;
+        }
+        .header3{
+            width: 70px;
+            border: 1px solid;
+        }
+        .login{
+            height: 40px;
+            width: 40px;
+            margin-top: 15px;
+            margin-left: 15px;
+            border-radius: 50%;
+            background: url(login.png) center / cover;
+        }
+        h1{
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            margin-top: 10px;
+        }
+        input{
+            background-color: #0F0F0F;
+            border-radius: 30px;
+            box-shadow: none;
+            border: 1px gray solid;
+            height: 40px;
+            font-size: larger;
+            width:100px;
+        }
+        .unheader{
+            height: 30px;
+            background-color: #0F0F0F;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+        }
+        .box{
+            border: none;
+            height: 30px;
+            background-color: #282828;
+            border-radius: 7px;
+            color: rgb(214, 214, 214);
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: none;
+            transition: .3s;
+            margin-right: 10px;
+        }
+        .box:hover{
+            background-color: #3F3F3F;
+        }
+        .body{
+            display: flex;
+        }
+        .box2{
+            border: solid 1px black;
+            width: 300px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header1">
+            <h1>YouTube <sup style="color: gray;">az</sup></h1>
+        </div>
+        <div class="header2">
+            <input type="search" name="" placeholder="Search">
+        </div>
+        <div class="header3">
+            <div class="login"></div>
+        </div>
+    </div>
+    <div class="unheader">
+        <button class="box">All</button>
+        <button class="box">Football</button>
+        <button class="box">Novels</button>
+        <button class="box">Video Games</button>
+        <button class="box">Jams</button>
+        <button class="box">Music</button>
+        <button class="box">Viewed</button>
+        <button class="box">Animation</button>
+        <button class="box">Minecraft</button>
+        <button class="box">Recently Published</button>
+        <button class="box">New for you</button>
+        <button class="box">Action & Adventure</button>
+    </div>
+    <div class="body">
+        <div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+        <div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        <div class="box2"></div>
+        </div>
+    </div>
+</body>
+</html>
