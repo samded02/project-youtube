@@ -7,7 +7,7 @@
     <style>
         *{
             margin: 0;
-
+            height: 100%;
         }
         .header{
             height: 70px;
@@ -18,21 +18,15 @@
         }
         .header1{
             margin-left: 30px;
-            border: 1px solid;
         }
         .header2{
-            
             line-height: 70px;
-            border: 1px solid;
-            margin-right: 100px;
-            margin-left: 100px;
+            margin-right: 50px;
+            margin-left: 50px;
             min-width: 100px;
-            max-width: 600px;
-            position: relative;
         }
         .header3{
             width: 70px;
-            border: 1px solid;
         }
         .login{
             height: 40px;
@@ -54,16 +48,12 @@
             border: 1px gray solid;
             height: 40px;
             font-size: larger;
-            width:100px;
+            min-width: 100px;
+            max-width: 500px;
+            color: white;
         }
-        .unheader{
-            height: 30px;
-            background-color: #0F0F0F;
-            display: flex;
-            justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-bottom: 10px;
+        .unheader::-webkit-scrollbar{
+            height: 15px;
         }
         .box{
             border: none;
@@ -80,13 +70,37 @@
         .box:hover{
             background-color: #3F3F3F;
         }
-        .body{
+        .unheader{
+            height: 30px;
+            background-color: #0F0F0F;
             display: flex;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 17px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            scroll-snap-type: x mandatory;
+            border: 1px solid red;
         }
-        .box2{
-            border: solid 1px black;
-            width: 300px;
-            height: 100px;
+        .unheader1{
+            width: 30%;
+            border: 1px solid blue;
+            display: flex;
+            flex-direction: column;
+        }
+        .unheaders{
+            display: flex;
+            justify-content: space-between;
+        }
+        .allinone{
+            width: 70%;
+            border: 1px solid;
+        }
+        .box1{
+            height: 50px;
+            width: 100%;
+            border: 1px solid;
         }
     </style>
 </head>
@@ -102,31 +116,66 @@
             <div class="login"></div>
         </div>
     </div>
-    <div class="unheader">
-        <button class="box">All</button>
-        <button class="box">Football</button>
-        <button class="box">Novels</button>
-        <button class="box">Video Games</button>
-        <button class="box">Jams</button>
-        <button class="box">Music</button>
-        <button class="box">Viewed</button>
-        <button class="box">Animation</button>
-        <button class="box">Minecraft</button>
-        <button class="box">Recently Published</button>
-        <button class="box">New for you</button>
-        <button class="box">Action & Adventure</button>
+    <div class="unheaders">
+        <div class="unheader1">
+            <div class="box1">
+                <div class="img1"></div>
+            </div>
+            <div class="box1">
+                <div class="img2"></div>
+            </div>
+            <div class="box1">
+                <div class="img3"></div>
+            </div>
+            <div class="box1">
+                <div class="img4"></div>
+            </div>
+            <div class="box1">
+                <div class="img5"></div>
+            </div>
+            <div class="box1">
+                <div class="img6"></div>
+            </div>
+            <div class="box1">
+                <div class="img7"></div>
+            </div>
+            <div class="box1">
+                <div class="img8"></div>
+            </div>
+            <div class="box1">
+                <div class="img9"></div>
+            </div>
+            <div class="box1">
+                <div class="img10"></div>
+            </div>
+        </div>
+        <div class="allinone">
+            <div class="unheader">
+                <button class="box">All</button>
+                <button class="box">Football</button>
+                <button class="box">Novels</button>
+                <button class="box">Video Games</button>
+                <button class="box">Jams</button>
+                <button class="box">Music</button>
+                <button class="box">Viewed</button>
+                <button class="box">Animation</button>
+                <button class="box">Minecraft</button>
+                <button class="box">Recently Published</button>
+                <button class="box">New for you</button>
+                <button class="box">Action & Adventure</button>
+            </div>
+            <div class="body">
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+                <div class="content"></div>
+            </div>
+        </div>
     </div>
     <div class="body">
-        <div>
-            <div class="box2"></div>
-            <div class="box2"></div>
-            <div class="box2"></div>
-        </div>
-        <div>
-        <div class="box2"></div>
-        <div class="box2"></div>
-        <div class="box2"></div>
-        </div>
+        
     </div>
 </body>
 </html>
